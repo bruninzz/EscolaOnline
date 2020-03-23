@@ -1,0 +1,15 @@
+D:\Projetos\Escolas\EscolasApi\EscolasApi\obj\Debug\netcoreapp2.1\EscolasApi.csproj.CoreCompileInputs.cache
+D:\Projetos\Escolas\EscolasApi\EscolasApi\obj\Debug\netcoreapp2.1\EscolasApi.AssemblyInfoInputs.cache
+D:\Projetos\Escolas\EscolasApi\EscolasApi\obj\Debug\netcoreapp2.1\EscolasApi.AssemblyInfo.cs
+D:\Projetos\Escolas\EscolasApi\EscolasApi\bin\Debug\netcoreapp2.1\EscolasApi.deps.json
+D:\Projetos\Escolas\EscolasApi\EscolasApi\bin\Debug\netcoreapp2.1\EscolasApi.runtimeconfig.json
+D:\Projetos\Escolas\EscolasApi\EscolasApi\bin\Debug\netcoreapp2.1\EscolasApi.runtimeconfig.dev.json
+D:\Projetos\Escolas\EscolasApi\EscolasApi\bin\Debug\netcoreapp2.1\EscolasApi.dll
+D:\Projetos\Escolas\EscolasApi\EscolasApi\bin\Debug\netcoreapp2.1\EscolasApi.pdb
+D:\Projetos\Escolas\EscolasApi\EscolasApi\obj\Debug\netcoreapp2.1\EscolasApi.RazorAssemblyInfo.cache
+D:\Projetos\Escolas\EscolasApi\EscolasApi\obj\Debug\netcoreapp2.1\EscolasApi.RazorAssemblyInfo.cs
+D:\Projetos\Escolas\EscolasApi\EscolasApi\obj\Debug\netcoreapp2.1\EscolasApi.RazorTargetAssemblyInfo.cache
+D:\Projetos\Escolas\EscolasApi\EscolasApi\obj\Debug\netcoreapp2.1\EscolasApi.dll
+D:\Projetos\Escolas\EscolasApi\EscolasApi\obj\Debug\netcoreapp2.1\EscolasApi.pdb
+D:\Projetos\Escolas\EscolasApi\EscolasApi\obj\Debug\netcoreapp2.1\EscolasApi.csprojAssemblyReference.cache
+D:\Projetos\Escolas\EscolasApi\EscolasApi\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

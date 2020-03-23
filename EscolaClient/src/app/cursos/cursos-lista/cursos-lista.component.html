@@ -1,0 +1,65 @@
+<div class="card mt-3">
+  <div class="card-header">
+    <div class="float-left">
+      <h4>Turmas</h4>
+    </div>
+   
+    <div class="float-right">
+      <button type="button" class="btn btn-primary" [routerLink]="['novo']">Nova Turma</button>
+      <button type="button" class="btn btn-outline-primary" (click)="onRefreshCursos()">Atualizar</button>
+    </div>
+    <br/><br/>
+    <div class="form-group">
+      <label>Selecione a escola:</label>
+      <select [(ngModel)]="idEscola" class="form-control" *ngIf="(escolas$ | async) as escolas; else loadingEscolas"  (ngModelChange)="onRefreshCursos()">
+        <option  *ngFor="let escola of (escolas$ | async) as escolas$" value= {{escola.id}}>
+          {{escola.name}}
+        </option>
+      </select> 
+    </div>
+  </div>
+  <div class="card-body">
+    <table class="table table-hover" *ngIf="(cursos$ | async) as cursos; else loading">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Turma</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let curso of cursos">
+          <td>{{ curso.id }}</td>
+          <td>{{ curso.nome }}</td>
+          <td>
+            <span class="float-right">
+              <button class="btn btn-outline-primary mb-1 btn-sm" (click)="onEdit(curso.id)">
+                Editar
+              </button>
+
+              <button class="btn btn-outline-danger mb-1 btn-sm" (click)="onDelete(curso)">
+                Remover
+              </button>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ng-template *ngIf="idEscola" #loading>
+      <span>Carregando...</span>
+    </ng-template>
+
+    <ng-template #loadingEscolas>
+      <span>Carregando...</span>
+    </ng-template>
+  </div>
+</div>
+
+<ng-template #deleteModal>
+  <div class="modal-body text-center">
+    <p>Tem certeza que deseja remover essa turma?</p>
+    <button type="button" class="btn btn-default" (click)="onConfirmDelete()">Sim</button>
+    <button type="button" class="btn btn-primary" (click)="onDeclineDelete()">Nao</button>
+  </div>
+</ng-template>
